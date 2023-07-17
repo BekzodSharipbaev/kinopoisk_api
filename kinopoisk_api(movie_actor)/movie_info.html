@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+
+    <title>Фильм</title>
+    <link rel="stylesheet" href="movie.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="movie__info">
+        <div class="movie__info-poster">
+          <img
+            class="movie_info_img"
+            src=""
+            alt=""
+            id="movie_poster_id"
+            onclick="openImageWindow(this.src);"
+          />
+          <iframe class="movie_trailer" src="" id="movie_trailer"></iframe>
+        </div>
+        <div class="movie__info-info">
+          <h1 class="movie__info-name" id="movie_name">name</h1>
+          <h3 class="movie__info-enname" id="movie_name-en">enname</h3>
+          <p class="movie_info_short_description" id="movie_short_desc">
+            descrip
+          </p>
+          <h3>О фильме</h3>
+          <div class="about-movie">
+            <div class="movie_info-year">
+              <p class="movie-atr">Год производства</p>
+              <p id="movie_year">-</p>
+            </div>
+            <div class="movie_info_countries">
+              <p class="movie-atr">Страна</p>
+              <p id="movie_country">-</p>
+            </div>
+            <div class="movie_info_genres">
+              <p class="movie-atr">Жанр</p>
+              <p id="movie_genre">-</p>
+            </div>
+            <div class="movie_info_slogan">
+              <p class="movie-atr">Слоган</p>
+              <p id="movie_slogan">-</p>
+            </div>
+            <div class="movie_info_director">
+              <p class="movie-atr">Режиссер</p>
+              <p id="movie_director">-</p>
+            </div>
+            <div class="movie_info_scenario">
+              <p class="movie-atr">Сценарий</p>
+              <p id="movie_scenario">-</p>
+            </div>
+            <div class="movie_info_profucer">
+              <p class="movie-atr">Продюссер</p>
+              <p id="movie_producer">-</p>
+            </div>
+            <div class="movie_info_operator">
+              <p class="movie-atr">Оператор</p>
+              <p id="movie_operator">-</p>
+            </div>
+            <div class="movie_info_composer">
+              <p class="movie-atr">Композитор</p>
+              <p class="text-ellipsis" id="movie_composer">-</p>
+            </div>
+            <div class="movie_info_designer">
+              <p class="movie-atr">Художник</p>
+              <p class="text-ellipsis" id="movie_designer">-</p>
+            </div>
+            <div class="movie_info_editor">
+              <p class="movie-atr">Монтаж</p>
+              <p class="text-ellipsis" id="movie_editor">-</p>
+            </div>
+            <div class="movie_info_actors">
+              <p class="movie-atr">Актеры</p>
+              <p class="text-ellipsis" id="movie_actors"></p>
+            </div>
+            <div class="movie_info_budget">
+              <p class="movie-atr">Бюджет</p>
+              <p class="text-ellipsis" id="movie_budget">-</p>
+            </div>
+            <div class="movie_info_fees">
+              <p class="movie-atr">Сборы</p>
+              <p class="text-ellipsis" id="movie_fees">-</p>
+            </div>
+            <div class="movie_info_premiere">
+              <p class="movie-atr">Премьера</p>
+              <p class="text-ellipsis" id="movie_premiere">-</p>
+            </div>
+            <div class="movie_info_ageRating">
+              <p class="movie-atr">Возраст</p>
+              <p class="text-ellipsis" id="movie_ageRating">-</p>
+            </div>
+            <div class="movie_info_movieLength">
+              <p class="movie-atr">Продолжительность</p>
+              <p class="text-ellipsis" id="movie_movieLength">-</p>
+            </div>
+            <div class="movie_info_fact">
+              <p class="movie-atr">Факт</p>
+              <p id="movie_fact">-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="movie_info_description" id="movie_description"></div>
+    </div>
+
+    <script src="movie.js"></script>
+  </body>
+</html>
